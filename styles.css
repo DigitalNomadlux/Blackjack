@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -25,8 +24,10 @@ button {
 
 .container {
   max-width: 1140px;
-  width: 100%;
   margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  width: 300px;
 }
 
 .message-el { font-style: italic; }
