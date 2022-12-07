@@ -42,14 +42,15 @@ function renderGame() {
     message = "Try Again";
     isAlive = false;
   }
-  messageEl.textContent = message;
-  
+  messageEl.textContent = message;  
 }
 
 
 function drawCard() {
-  let card = getRandomCard();
-  sum += card;
-  cards.push(card);
-  renderGame();
+  if (hasBlackjack === false && isAlive === true) {
+    let card = getRandomCard();
+    sum += card;
+    cards.push(card);
+    renderGame();
+  }
 }
